@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html com Python</title>
+    <link rel="stylesheet" href="/static/index.css">
+    
+</head>
+<body>
+    <header>
+        <h1>buchosc.ly</h1>
+        <nav>
+            <a href="">Início</a>
+            <a href="">Dúvidas</a>
+            <a href="">Sobre nós</a>
+            <a href="http://127.0.0.1:5000/listar/tudo" id="desenvolvedor">Área de Desenvolvimento</a>
+            
+        </nav>
+    </header>
+
+    <!-- <div id="container">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque obcaecati ab veritatis aperiam sequi! Enim veniam eos dolor, suscipit at, facilis et quasi voluptatem asperiores, incidunt vitae tempore corporis porro. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi doloremque illo quisquam minus quas assumenda autem explicabo numquam deleniti natus repudiandae, tempora possimus eligendi iusto nostrum ad repellat. Fuga, commodi.</p>
+        <img src="encurtador.png" alt="Imagens_marketing">
+    </div> -->
+    <main>
+        <h1>Seu encurtador de url preferido</h1>
+
+        <form action="http://127.0.0.1:5000/guardar/" method="post">
+            
+            <input type="text" name="link" id="controle" placeholder="Cole seu link aqui">
+            <button onclick="verificar()" id="botao">Encurtar</button>
+            <p id="resul" style="background-color: aqua;"></p>
+        </form>
+    </main>
+
+    
+    <footer>Desevolvido por Rodrigo</footer>
+
+
+    </form>
+    <script src="../static/controle.js"></script>
+</body>
+</html>

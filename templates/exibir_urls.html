@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=li, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        body > div{
+            display: inline-block;
+            margin: 20px;
+            
+        }
+        
+        div{
+            
+            background-color: antiquewhite;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ol>
+
+            {% for item in lista1 %}
+            <li>{{item[0]}}</li>
+            {% endfor %}
+    
+            
+        </ol>
+    </div>
+    <div>
+        <ol>
+            {% for item in lista1 %}
+            <li>{{item[1]}}</li>
+            {% endfor %}
+        </ol>
+    </div>
+</body>
+</html>

@@ -51,5 +51,5 @@ def listar():
 
 
 if __name__ == '__main__':
-    #host='0.0.0.0' usar para deixar disponivel na rede local
-    app.run()
+    
+    app.run(host='0.0.0.0')

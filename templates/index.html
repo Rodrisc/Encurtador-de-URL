@@ -6,15 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Html com Python</title>
     <link rel="stylesheet" href="/static/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <style>
+        #button:disabled{
+            background-color: rgb(255, 147, 147);
+            transition: 0.5s;
+            cursor: no-drop;
+        }
+
+        #button:enabled{
+            background-color: #058aff;
+            transition: 0.5s;
+        }
+    </style>
     
 </head>
 <body>
     <header>
         <h1>buchosc.ly</h1>
         <nav>
-            <a href="">Início</a>
-            <a href="">Dúvidas</a>
-            <a href="">Sobre nós</a>
+            <a href="/">Início</a>
+            <a href="#">Dúvidas</a>
+            <a href="#">Sobre nós</a>
             <a href="http://127.0.0.1:5000/listar/tudo" id="desenvolvedor">Área de Desenvolvimento</a>
             
         </nav>
@@ -27,10 +41,10 @@
     <main>
         <h1>Seu encurtador de url preferido</h1>
 
-        <form action="http://127.0.0.1:5000/guardar/" method="post">
+        <form action="/guardar" method="post">
             
             <input type="text" name="link" id="controle" placeholder="Cole seu link aqui">
-            <button onclick="verificar()" id="botao">Encurtar</button>
+            <button onclick="verificar()" id="button" disabled>Encurtar</button>
             <p id="resul" style="background-color: aqua;"></p>
         </form>
     </main>

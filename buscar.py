@@ -1,4 +1,3 @@
-from math import trunc
 import random
 #import psycopg2 as sql
 import sqlite3
@@ -31,6 +30,7 @@ def busca_url(url):
     else:
         cursor.execute(f"select urloriginal from urls where urlcurta = '{url}'")
         lista = cursor.fetchall()
+        print(lista)
         return lista
     
     
